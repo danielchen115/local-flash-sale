@@ -16,8 +16,9 @@ class Sale extends JsonResource
     {
         return [
             'id' => $this->id,
-            'product_id' => $this->product_id,
-            'sale_price' => $this->sale_price
+            'product_name' => $this->product_name,
+            'sale_price' => $this->sale_price,
+            'unit' => $this->unit
         ];
     }
 }

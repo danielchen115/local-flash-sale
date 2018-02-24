@@ -13,21 +13,21 @@ class SalesTableSeeder extends Seeder
     {
         DB::table('sales')->insert([
             [
-                'product_id' => '1',
+                'product_name' => 'Lean Beef',
                 'sale_price' => 4.99,
                 'unit' => 'per pound',
             ]
         ]);
         DB::table('sales')->insert([
             [
-                'product_id' => '2',
+                'product_name' => 'Sweet Potato',
                 'sale_price' => 0.99,
                 'unit' => 'per pound',
             ]
         ]);
         DB::table('sales')->insert([
             [
-                'product_id' => '3',
+                'product_name' => '2% Plain Yogurt',
                 'sale_price' => 0.99,
                 'unit' => '',
             ]
