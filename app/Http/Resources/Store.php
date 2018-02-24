@@ -2,11 +2,11 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Resources\Json\Resource;
 use Illuminate\Support\Facades\DB;
 
 
-class Store extends JsonResource
+class Store extends Resource
 {
     /**
      * Transform the resource into an array.

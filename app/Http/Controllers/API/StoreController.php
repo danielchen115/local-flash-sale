@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
-use App\User;
+use App\Store;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Store as StoreResource;
@@ -22,10 +22,11 @@ class StoreController extends Controller
 
     public function getOne($id)
     {
-        $store = User::find($id);
-        $resource = StoreResource::collection($store);
-        $resource->wrap('categories');
-        return $resource;
+        $store = Store::find($id);
+//        dd($store);
+        $resource = new StoreResource($store);
+        $resource->wrap('store');
+        return $resource->response();
     }
 
     /**
