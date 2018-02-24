@@ -18,3 +18,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/products', array('as' => 'products.index', 'uses' => 'ProductController@index'));
 Route::get('/sales/create', array('as' => 'sales.create', 'uses' => 'SaleController@create'));
+Route::get('/sales/store', array('as' => 'sales.store', 'uses' => 'SaleController@store'));
+

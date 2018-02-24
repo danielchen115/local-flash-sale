@@ -17,8 +17,7 @@ class CreateSalesTable extends Migration
             $table->increments('id');
             $table->integer('product_id');
             $table->float('sale_price');
-            $table->dateTime('start_at');
-            $table->dateTime('end_at');
+            $table->string('unit');
             $table->timestamps();
         });
     }

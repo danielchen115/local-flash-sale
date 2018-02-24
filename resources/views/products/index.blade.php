@@ -15,7 +15,7 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Product Name</th>
                                 <th scope="col">Price</th>
-                                <th style="text-align: center;" scope="col">Actions</th>
+                                <th style="text-align: center;" scope="col">Select for Sale?</th>
                             </tr>
                             </thead>
                             <tbody style="font-size: 20px"> @foreach ($products as $product)
@@ -23,10 +23,13 @@
                                     <th style="vertical-align: middle;" scope="row">{{$product->id}}</th>
                                     <td style="vertical-align: middle;">{{ $product->name }}</td>
                                     <td style="vertical-align: middle;">${{ $product->price }} {{ $product->unit }}</td>
-                                    <td style="color: #D00000"><a  href="{{ route('sales.create') }}" class="btn btn-info btn-block btn-lg"> Start Sale</a></td>
+                                    <td style="text-align: center"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
                                 </tr> @endforeach </tbody>
                         </table>
                     </div>
+                    <a href="{{ route('sales.store') }}" style="text-align: center" class="btn btn-info btn-block btn-lg">Start 30 Minute Sale</a>
+
                 </div>
             </div>
         </div>

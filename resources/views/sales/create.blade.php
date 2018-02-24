@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card card-default">
                     <div class="card-header">Offer a ride on your next journey!</div>
                     <div class="card-body">
@@ -13,9 +13,53 @@
                             </div>
                         @endif
                         {{--@TODO customize form (incl. labels and names) for speicfic use. THIS WAS COPY AND PASTED FROM BOOTSTRAP SITE--}}
-                        <form>
+                            <form>
+                                <div class="form-row">
+                                    <label for="inputSeats" class="col-sm-2 col-form-label">From: </label>
+                                    <select id="inputMonthFrom" class="form-control">
+                                        <option selected>Month...</option>
+                                        <option>Jan</option>
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                        <option>Apr</option>
+                                        <option>May</option>
+                                        <option>Jun</option>
+                                        <option>Jul</option>
+                                        <option>Aug</option>
+                                        <option>Sep</option>
+                                        <option>Oct</option>
+                                        <option>Nov</option>
+                                        <option>Dec</option>
+                                    </select>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+                            </form>
+                        <form class="form-inline">
                             <div class="form-group row">
-                                <label for="inputPickup" class="col-sm-2 col-form-label">Pick-up</label>
+                                <label for="inputSeats" class="col-sm-2 col-form-label">From: </label>
+
+                                    <select id="inputMonthFrom" class="form-control">
+                                        <option selected>Month...</option>
+                                        <option>Jan</option>
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                        <option>Apr</option>
+                                        <option>May</option>
+                                        <option>Jun</option>
+                                        <option>Jul</option>
+                                        <option>Aug</option>
+                                        <option>Sep</option>
+                                        <option>Oct</option>
+                                        <option>Nov</option>
+                                        <option>Dec</option>
+                                    </select>
+
+
+                            </div>
+                            <div align="right" class="form-group row">
+                                <label for="inputPickup" class="col-sm-2 col-form-label">Month</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="inputPickup" placeholder="Example: Toronto, Ottawa">
                                 </div>

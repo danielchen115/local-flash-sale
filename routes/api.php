@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/stores/{id}',['stores_get_one', 'uses' => 'API\StoreController@getOne']);
+Route::get('/stores/{id}/sales',['sales_get', 'uses' => 'API\SaleController@get']);
+
