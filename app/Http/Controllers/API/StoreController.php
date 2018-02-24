@@ -23,6 +23,16 @@ class StoreController extends Controller
     public function getOne($id)
     {
         $store = Store::find($id);
+
+        if (!$store) {
+            return new JsonResponse(
+                [
+                    'message' => 'Not found.'
+                ], 404, [],
+                JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
+            );
+        }
+        
         $resource = new StoreResource($store);
         $resource->wrap('store');
         return $resource->response();
