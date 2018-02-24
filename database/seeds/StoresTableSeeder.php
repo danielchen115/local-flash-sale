@@ -18,5 +18,12 @@ class StoresTableSeeder extends Seeder
                 'longitude' => -79.071405,
             ]
         ]);
+        DB::table('stores')->insert([
+            [
+                'name' => 'Longo\'s',
+                'latitude' => 43.868475,
+                'longitude' => -79.229872,
+            ]
+        ]);
     }
 }

@@ -23,7 +23,7 @@
                                     <th style="vertical-align: middle;" scope="row">{{$product->id}}</th>
                                     <td style="vertical-align: middle;">{{ $product->name }}</td>
                                     <td style="vertical-align: middle;">${{ $product->price }} {{ $product->unit }}</td>
-                                    <td><a href="{{ route('sales.create') }}" class="btn btn-info btn-block btn-lg"> Start Sale</a></td>
+                                    <td style="color: #D00000"><a  href="{{ route('sales.create') }}" class="btn btn-info btn-block btn-lg"> Start Sale</a></td>
                                 </tr> @endforeach </tbody>
                         </table>
                     </div>
