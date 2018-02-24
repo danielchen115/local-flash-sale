@@ -49,14 +49,14 @@ class ProductsTableSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => 'Recycled Scotties Kleenex',
-                'price' => 6.50,
+                'price' => 6.59,
                 'unit' => '',
             ]
         ]);
         DB::table('products')->insert([
             [
                 'name' => 'Spring Onions',
-                'price' => 0.70,
+                'price' => 0.79,
                 'unit' => 'per pound',
             ]
         ]);

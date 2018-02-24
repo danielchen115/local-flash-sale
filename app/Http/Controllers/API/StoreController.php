@@ -23,7 +23,6 @@ class StoreController extends Controller
     public function getOne($id)
     {
         $store = Store::find($id);
-//        dd($store);
         $resource = new StoreResource($store);
         $resource->wrap('store');
         return $resource->response();

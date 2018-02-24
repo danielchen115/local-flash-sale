@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">All Products</div>
                     <div class="card-body"> @if (session('status'))
@@ -18,12 +18,12 @@
                                 <th scope="col">Actions</th>
                             </tr>
                             </thead>
-                            <tbody> @foreach ($products as $product)
+                            <tbody style="font-size: 20px"> @foreach ($products as $product)
                                 <tr>
                                     <th scope="row">{{$product->id}}</th>
                                     <td>{{ $product->name }}</td>
                                     <td>${{ $product->price }} {{ $product->unit }}</td>
-                                    <td></td>
+                                    <td><a href="{{ route('sales.create') }}" class="btn btn-info btn-block btn-lg"> Start Sale</a></td>
                                 </tr> @endforeach </tbody>
                         </table>
                     </div>
