@@ -4,6 +4,8 @@ namespace App\Http\Controllers\API;
 
 use App\Store;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Store as StoreResource;
 
@@ -32,7 +34,7 @@ class StoreController extends Controller
                 JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
             );
         }
-        
+
         $resource = new StoreResource($store);
         $resource->wrap('store');
         return $resource->response();
