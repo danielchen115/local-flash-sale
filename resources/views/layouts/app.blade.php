@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" src="/storage/app/public/Snack_Overflow_1.png">
 </head>
 <body>
     <div id="app">

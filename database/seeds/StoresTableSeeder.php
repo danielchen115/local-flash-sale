@@ -25,5 +25,26 @@ class StoresTableSeeder extends Seeder
                 'longitude' => -79.229872,
             ]
         ]);
+        DB::table('stores')->insert([
+            [
+                'name' => 'Food Basics',
+                'latitude' => 43.770282,
+                'longitude' => -79.185012,
+            ]
+        ]);
+        DB::table('stores')->insert([
+            [
+                'name' => 'No Frills',
+                'latitude' => 43.769113,
+                'longitude' => -79.186793,
+            ]
+        ]);
+        DB::table('stores')->insert([
+            [
+                'name' => 'Metro',
+                'latitude' => 43.788035,
+                'longitude' => -79.140192,
+            ]
+        ]);
     }
 }
