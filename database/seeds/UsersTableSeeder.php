@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('secret'),
                 'longitude' => -79.3832,
                 'latitude' => 43.6532
-            ]
+            ]d
         ]);
     }
 }
