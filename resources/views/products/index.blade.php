@@ -23,7 +23,7 @@
                                     <th style="vertical-align: middle;" scope="row">{{$product->id}}</th>
                                     <td style="vertical-align: middle;">{{ $product->name }}</td>
                                     <td style="vertical-align: middle;">${{ $product->price }} {{ $product->unit }}</td>
-                                    <td style="text-align: center"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <td style="text-align: center"> <input class="form-check-input" type="checkbox" value="isSale" id="defaultCheck1">
 
                                 </tr> @endforeach </tbody>
                         </table>

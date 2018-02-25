@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Sale;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class ProductController extends Controller
 {
@@ -15,7 +18,9 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::All();
-        return view('products.index')->with('products', $products);
+        $onSale = DB::table('sales')->get('product_id');
+        dd($onSale);
+        return view('products.index')->with('products', $products)->with('isChecked', $isChecked);
     }
 
     /**
