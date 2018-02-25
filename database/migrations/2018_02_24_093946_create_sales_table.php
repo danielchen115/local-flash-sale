@@ -16,7 +16,7 @@ class CreateSalesTable extends Migration
         Schema::create('sales', function (Blueprint $table) {
             $table->increments('id');
             $table->string('product_name');
-            $table->float('sale_price');
+            $table->string('sale_price');
             $table->string('unit');
             $table->timestamps();
         });
