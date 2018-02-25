@@ -9,89 +9,90 @@ class SalesTableSeeder extends Seeder
      *
      * @return void
      */
+
     public function run()
     {
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 1,
-                'name' => 'Lean Beef',
-                'price' => 8.99,
+                'product_id' => 1,
+                'product_name' => 'Lean Beef',
+                'sale_price' => 5.99,
                 'unit' => 'per pound',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 1,
-                'name' => 'Sweet Potatoes',
-                'price' => 1.29,
+                'product_id' => 2,
+                'product_name' => 'Sweet Potatoes',
+                'sale_price' => 1.29,
                 'unit' => 'per pound',
             ]
         ]);
 
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 2,
-                'name' => 'Chicken Breast',
-                'price' => 3.39,
+                'product_id' => 3,
+                'product_name' => 'Chicken Breast',
+                'sale_price' => 3.39,
                 'unit' => 'per pound',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 2,
-                'name' => 'Recycled Scotties Kleenex',
-                'price' => 2.99,
+                'product_id' => 4,
+                'product_name' => 'Recycled Scotties Kleenex',
+                'sale_price' => 2.99,
                 'unit' => '',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 3,
-                'name' => 'Spring Onions',
-                'price' => 0.29,
+                'product_id' => 5,
+                'product_name' => 'Spring Onions',
+                'sale_price' => 0.29,
                 'unit' => 'per pound',
             ]
         ]);
 
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 3,
-                'name' => 'Fresh Strawberries',
-                'price' => 0.99,
+                'product_id' => 6,
+                'product_name' => 'Fresh Strawberries',
+                'sale_price' => 0.99,
                 'unit' => 'per pound',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 4,
-                'name' => 'Large Canteloupes',
-                'price' => 1.99,
+                'product_id' => 7,
+                'product_name' => 'Large Canteloupes',
+                'sale_price' => 1.99,
                 'unit' => 'per pound',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 4,
-                'name' => 'Ataulfo Mangoes',
-                'price' => 0.89,
+                'product_id' => 8,
+                'product_name' => 'Ataulfo Mangoes',
+                'sale_price' => 0.89,
                 'unit' => 'per pound',
             ]
         ]);
 
 
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 5,
-                'name' => 'Minneola Oranges',
-                'price' => 1.29,
+                'product_id' => 9,
+                'product_name' => 'Minneola Oranges',
+                'sale_price' => 1.29,
                 'unit' => 'per pound',
             ]
         ]);
-        DB::table('products')->insert([
+        DB::table('sales')->insert([
             [
-                'shop_id' => 5,
-                'name' => 'Squash',
-                'price' => 0.59,
+                'product_id' => 10,
+                'product_name' => 'Squash',
+                'sale_price' => 0.59,
                 'unit' => 'per pound',
             ]
         ]);

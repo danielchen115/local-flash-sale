@@ -22,33 +22,9 @@ class ProductsTableSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'shop_id' => 1,
-                'name' => 'Sweet Potatoes',
-                'price' => 2.59,
-                'unit' => 'per pound',
-            ]
-        ]);
-        DB::table('products')->insert([
-            [
-                'shop_id' => 1,
                 'name' => '2% Plain Yogurt',
                 'price' => 1.99,
                 'unit' => '',
-            ]
-        ]);
-        DB::table('products')->insert([
-            [
-                'shop_id' => 2,
-                'name' => 'Chicken Breast',
-                'price' => 7.69,
-                'unit' => 'per pound',
-            ]
-        ]);
-        DB::table('products')->insert([
-            [
-                'shop_id' => 2,
-                'name' => 'Yukon Gold Potatoes',
-                'price' => 3.49,
-                'unit' => 'per pound',
             ]
         ]);
         DB::table('products')->insert([
@@ -88,14 +64,6 @@ class ProductsTableSeeder extends Seeder
                 'shop_id' => 4,
                 'name' => 'Large Canteloupes',
                 'price' => 2.99,
-                'unit' => 'per pound',
-            ]
-        ]);
-        DB::table('products')->insert([
-            [
-                'shop_id' => 4,
-                'name' => 'Ataulfo Mangoes',
-                'price' => 1.19,
                 'unit' => 'per pound',
             ]
         ]);
