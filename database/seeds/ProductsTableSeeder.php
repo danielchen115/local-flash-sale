@@ -54,6 +54,8 @@ class ProductsTableSeeder extends Seeder
                 'price' => 4.99,
                 'sale_price' => 2.99,
                 'unit' => 'per pound',
+                'isChecked' => 1
+
             ]
         ]);
         DB::table('products')->insert([
@@ -63,6 +65,7 @@ class ProductsTableSeeder extends Seeder
                 'price' => 1.99,
                 'sale_price' => 0.99,
                 'unit' => 'per pound',
+                'isChecked' => 1
             ]
         ]);
         DB::table('products')->insert([

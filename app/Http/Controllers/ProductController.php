@@ -18,9 +18,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::All();
-        $onSale = DB::table('sales')->get('product_id');
-        dd($onSale);
-        return view('products.index')->with('products', $products)->with('isChecked', $isChecked);
+        return view('products.index')->with('products', $products);
     }
 
     /**
@@ -41,7 +39,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

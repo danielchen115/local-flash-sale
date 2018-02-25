@@ -18,7 +18,8 @@ class CreateProductsTable extends Migration
             $table->integer('shop_id');
             $table->string('name');
             $table->float('price');
-            $table->float('sale_price');
+            $table->float('sale_price')->nullable();
+            $table->boolean('isChecked')->default(0);
             $table->string('unit');
             $table->timestamps();
         });

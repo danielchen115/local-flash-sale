@@ -23,12 +23,12 @@
                                     <th style="vertical-align: middle;" scope="row">{{$product->id}}</th>
                                     <td style="vertical-align: middle;">{{ $product->name }}</td>
                                     <td style="vertical-align: middle;">${{ $product->price }} {{ $product->unit }}</td>
-                                    <td style="text-align: center"> <input class="form-check-input" type="checkbox" value="isSale" id="defaultCheck1">
+                                    <td style="text-align: center"> <input class="form-check-input" type="checkbox" value="{{ $product }}" {!! $product->isChecked == 1 ? ' checked="checked"' : '' !!} id="saleCheckbox">
 
                                 </tr> @endforeach </tbody>
                         </table>
                     </div>
-                    <a href="{{ route('sales.store') }}" style="text-align: center" class="btn btn-info btn-block btn-lg">Start 30 Minute Sale</a>
+                    <a href="{{ route('products.store') }}" style="text-align: center" class="btn btn-info btn-block btn-lg">Start 30 Minute Sale</a>
 
                 </div>
             </div>
